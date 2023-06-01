@@ -1,0 +1,23 @@
+.block {
+    font-size: 72px;
+    margin: 0% auto 10% auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* .video {
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 10s;
+}
+
+@keyframes run {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 88%;
+    }
+} */

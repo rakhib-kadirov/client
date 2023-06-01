@@ -1,0 +1,233 @@
+.content-in {
+    margin: -60px 0 60px 0;
+}
+
+.title {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 4fr;
+    height: 48px;
+    font-family: "Comic Sans MS";
+    padding-left: 8px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    /* position: relative; */
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "sidebar main";
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 16px 8px;
+    border-right: 1px solid #3f3f3f;
+    height: 100%;
+    background-color: #bddae0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.main {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+}
+
+
+.size_main {
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: calc(60vh - 1ch) 1ch;
+}
+
+.messages {
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 16px 8px;
+}
+
+.write_msg {
+    height: 100%;
+}
+
+.write_msg form {
+    display: flex;
+}
+
+.write_msg_input {
+    width: 90%;
+    padding: 12px 16px;
+    margin-left: 8px;
+    border-radius: 24px;
+    border: 1px solid #3f3f3f;
+}
+
+.write_msg_btn {
+    font-size: 24px;
+    border-radius: 100%;
+    background-color: #3f3f3f rgba(red, green, blue, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+#new-message {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* width: 100%; */
+    /* height: 10%; */
+    /* padding: 5px; */
+    margin: 0 10px;
+    /* border-top: 1px solid #3f3f3f; */
+    font-family: "Comic Sans MS";
+}
+
+#new_m_input {
+    width: 100vh;
+    padding: 8px;
+    font-family: "Comic Sans MS";
+}
+
+#messages-list {
+    padding: 5px 0 0 5px;
+    font-family: "Comic Sans MS";
+}
+
+
+
+
+
+
+
+
+/* Окно мессенджера */
+.chat-window {
+    width: 65vw;
+    height: auto;
+}
+
+.chat-window p {
+    margin: 0;
+}
+
+.chat-window .chat-header {
+    height: 45px;
+    border-radius: 6px;
+    background: #263238;
+    position: relative;
+    cursor: pointer;
+}
+
+.chat-window .chat-header p {
+    display: block;
+    padding: 0 1em 0 2em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.chat-window .chat-body {
+    height: 70vh;
+    border: 2px solid #BDDAE0;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    background: #fff;
+}
+
+.chat-window .chat-body .message-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chat-window .chat-body .message-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-window .chat-body .message {
+    height: auto;
+    padding: 10px;
+    display: flex;
+}
+
+.chat-window .chat-body .message .message-content {
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    max-width: 440px;
+    background-color: #43a047;
+    border-radius: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    /* padding-right: 20px;
+    padding-left: 5px; */
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+
+/* Поле ввода сообщений и отправки */
+.chat-window .chat-footer {
+    height: 44px;
+    /* border: 2px solid #BDDAE0; */
+    border-top: none;
+    display: flex;
+}
+
+.chat-window .chat-footer input {
+    flex: 85%;
+    /* border: 0; */
+    padding: 0 0 0 1em;
+    font-size: 1em;
+
+    border-top: none;
+    border-right: 2px solid #BDDAE0;
+    border-bottom: 2px solid #BDDAE0;
+    border-left: 2px solid #BDDAE0;
+    border-bottom-left-radius: 22px;
+    /* border-bottom-right-radius: 22px; */
+    outline: none;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+.chat-window .chat-footer button {
+    border-top: none;
+    border-right: 2px solid #BDDAE0;
+    border-bottom: 2px solid #BDDAE0;
+    border-left: none;
+    border-bottom-right-radius: 22px;
+
+    place-items: center;
+    cursor: pointer;
+    flex: 15%;
+    background: transparent;
+    outline: none;
+    font-size: 28px;
+    font-weight: 900;
+    color: lightgray;
+}
+
+.chat-window .chat-footer button:hover {
+    color: #FED700;
+}
+
+.hide {
+    opacity: 0 !important;
+}

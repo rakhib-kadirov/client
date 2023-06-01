@@ -1,0 +1,46 @@
+.content-list-items {
+    display: flex;
+    width: 100%;
+}
+
+/* Подблоки с ссылками (товарами) */
+.list-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% / 6);
+    height: auto;
+}
+
+/* Кнопка избранного */
+.li-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+/* Сама кнопка (тег) */
+.libf-button {
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    padding: 0;
+}
+
+/* Картинка товара (ссылка) */
+.li-link {
+    width: 100%;
+}
+
+.lio-name {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin: 8px 0;
+    color: black;
+    white-space: normal;
+}
