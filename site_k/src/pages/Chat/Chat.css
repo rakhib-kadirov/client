@@ -3,10 +3,10 @@
 }
 
 .title {
-    display: grid;
+    /* display: grid; */
     width: 100%;
     grid-template-columns: 1fr 4fr;
-    height: 48px;
+    /* height: 48px; */
     font-family: "Comic Sans MS";
     padding-left: 8px;
 }

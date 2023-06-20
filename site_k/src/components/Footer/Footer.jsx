@@ -9,27 +9,27 @@ const Footer = () => {
             <div className="content-width">
                 <div className="footer-info-in">
                     {/* <!-- Перывя колонна --> */}
-                    <div className="column">
+                    {/* <div className="column">
                         <span className="column-span">Сервис</span>
                         <a href="contacts.html">Программа лояльности</a>
                         <a href="contacts.html">Способы оплаты</a>
                         <a href="contacts.html">Доставка товара</a>
                         <a href="contacts.html">Возврат товара</a>
-                    </div>
+                    </div> */}
                     {/* <!-- Вторая колонна --> */}
-                    <div className="column">
+                    {/* <div className="column">
                         <span className="column-span">О компании</span>
                         <a href="contacts.html">Об Bunny Office</a>
                         <a href="contacts.html">Резвизиты (денюшку сюда)</a>
                         <a href="cont.html">Контакты</a>
-                    </div>
+                    </div> */}
                     {/* <!-- Третья колонна --> */}
-                    <div className="column">
+                    {/* <div className="column">
                         <span className="column-span">Помощь</span>
                         <a href="contacts.html">Как сделать заказ</a>
                         <a href="contacts.html">Как вернуть заказ и деньги</a>
                         <a href="contacts.html">Гарантии</a>
-                    </div>
+                    </div> */}
                     {/* <!-- Четвёртая колонна со ссылками на соц. сети --> */}
                     <div className="column-info">
                         <div>

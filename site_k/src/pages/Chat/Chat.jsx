@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ScrollToBottom from "react-scroll-to-bottom";
 import './Chat.css'
 
-function Chat({ socket, username, id }) {
+function Chat({ socket, username }) {
   const [currentMessage, setCurrentMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
 
@@ -17,7 +17,6 @@ function Chat({ socket, username, id }) {
           ":" +
           new Date(Date.now()).getMinutes(),
       };
-
       await socket.emit("send_message", messageData);
       setMessageList((list) => [...list, messageData]);
       setCurrentMessage("");
@@ -36,10 +35,7 @@ function Chat({ socket, username, id }) {
         <ScrollToBottom className="message-container">
           {messageList.map((messageContent) => {
             return (
-              <div
-                className="message"
-                id={username === messageContent.author ? "other" : "you"}
-              >
+              <div className="message" id={username === messageContent.author ? "other" : "you"}>
                 <div>
                   <div className="message-content">
                     <p>{messageContent.message}</p>
@@ -55,21 +51,9 @@ function Chat({ socket, username, id }) {
         </ScrollToBottom>
       </div>
       <div className="chat-footer">
-        <input
-          type="text"
-          value={currentMessage}
-          placeholder="Сообщение..."
-          onChange={(event) => {
-            setCurrentMessage(event.target.value);
-          }}
-          onKeyPress={(event) => {
-            event.key === "Enter" && sendMessage();
-          }}
-        />
-        <button onClick={sendMessage}>
-          {/* &#9658; */}
-          &#10148;
-        </button>
+        <input type="text" value={currentMessage} placeholder="Сообщение..." onChange={(event) => { setCurrentMessage(event.target.value); }} 
+        onKeyPress={(event) => { event.key === "Enter" && sendMessage(); }} />
+        <button onClick={sendMessage}> &#10148; </button>
       </div>
     </div>
   );

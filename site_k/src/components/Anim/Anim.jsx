@@ -1,7 +1,7 @@
 import React from 'react'
 import './Anim.css'
 
-import Logo from "../../pictures/bunny_office_copy_v_1.svg"
+import Logo from "../../pictures/UniConverter 14_20230608230112.gif"
 
 // import lolaBunny from '../../pictures/LolaBunny.mp4'
 
@@ -12,9 +12,6 @@ const Anim = () => {
         <div className='block'>
           <img src={Logo} alt="" />
         </div>
-        {/* <div className='video'>
-          <video src={lolaBunny} type="video/mp4" autoPlay controls muted loop playsInline></video>
-        </div> */}
       </div>
     </>
   )

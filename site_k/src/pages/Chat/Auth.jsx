@@ -5,7 +5,7 @@ import Chat from "./Chat";
 
 const socket = io.connect("http://localhost:3002");
 
-function App() {
+function Auth() {
   const [username, setUsername] = useState("");
   const [room, setRoom] = useState("");
   const [showChat, setShowChat] = useState(false);
@@ -22,20 +22,9 @@ function App() {
       {!showChat ? (
         <div className="joinChatContainer">
           <h3>Join A Chat</h3>
-          <input
-            type="text"
-            placeholder="John..."
-            onChange={(event) => {
-              setUsername(event.target.value);
-            }}
+          <input type="text" placeholder="John..."  onChange={(event) => { setUsername(event.target.value); }}
           />
-          <input
-            style={{display: 'none'}}
-            type="text"
-            placeholder="Room ID..."
-            onChange={(event) => {
-              setRoom(event.target.value);
-            }}
+          <input style={{display: 'none'}} type="text" placeholder="Room ID..." onChange={(event) => { setRoom(event.target.value); }}
           />
           <button onClick={joinRoom}>Join A Room</button>
         </div>
@@ -46,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default Auth;
